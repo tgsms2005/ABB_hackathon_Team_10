@@ -54,7 +54,7 @@ Make sure you have the following installed:
 2. Run the following command:
 
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
 
    This command will build the images for all three services and start them in the correct order.

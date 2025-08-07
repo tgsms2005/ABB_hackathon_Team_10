@@ -1,0 +1,234 @@
+/* App-wide container styling */
+.main-container {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* This makes the main content expand to fill available vertical space. */
+}
+
+.content-card {
+  width: 100%;
+  max-width: 1200px;
+  padding: 24px;
+}
+
+/* Header and Footer Styling */
+.app-header {
+  background-color: var(--mat-sys-primary); /* Use a Material theme color */
+  color: var(--mat-sys-on-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 0;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add some horizontal padding */
+}
+
+.app-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.5rem; /* Larger font size for prominence */
+}
+
+/* Add this to your styles.scss or component styles */
+.app-footer {
+  /* The position properties are removed since they are no longer needed with the Flexbox layout. */
+  top: 0;
+  text-align: center;
+  padding: 12px 20px;
+  background-color: var(--mat-sys-surface-variant);
+  color: var(--mat-sys-on-surface-variant);
+  font-size: 0.8rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  /* The z-index is removed as it's no longer a fixed element. */
+}
+
+/* Tab Content Styling */
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+/* Other component-specific styles */
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.toggle-theme {
+  margin-left: auto;
+}
+
+
+/* Theme Variables */
+:root {
+  /* Light Theme */
+  --primary-color: #3f51b5;
+  --accent-color: #ff4081;
+  --background-color: #f5f5f5;
+  --card-background: #ffffff;
+  --text-color: #212121;
+  --toolbar-color: #3f51b5;
+  --toolbar-text: #ffffff;
+  --button-color: #3f51b5;
+  --button-text: #ffffff;
+  --disabled-color: #e0e0e0;
+}
+
+.dark-theme {
+  /* Dark Theme */
+  --primary-color: #5c6bc0;
+  --accent-color: #ff80ab;
+  --background-color: #303030;
+  --card-background: #424242;
+  --text-color: #f5f5f5;
+  --toolbar-color: #212121;
+  --toolbar-text: #ffffff;
+  --button-color: #5c6bc0;
+  --button-text: #ffffff;
+  --disabled-color: #616161;
+}
+
+/* Apply Theme */
+body {
+  /* Added Flexbox to the body to manage the layout */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.app-header {
+  background-color: var(--toolbar-color);
+  color: var(--toolbar-text);
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+/* Primary Buttons (Next) */
+button[mat-raised-button] {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  padding: 8px 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  &:disabled {
+    background-color: var(--disabled-color);
+    color: var(--text-color);
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+/* Secondary Buttons (Previous) */
+button[mat-button] {
+  color: var(--button-color);
+  padding: 8px 24px;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: rgba(var(--button-color), 0.1);
+  }
+  
+  &:disabled {
+    color: var(--disabled-color);
+  }
+}
+
+/* Theme Toggle Button */
+.toggle-theme {
+  background-color: transparent;
+  color: var(--toolbar-text);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  mat-icon {
+    font-size: 24px;
+  }
+}
+
+/* Card Styling */
+.content-card {
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+/* Footer */
+.app-footer {
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+
+/* Main app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it takes at least full viewport height */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* This makes the content expand to push footer down */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer styling */
+.app-footer {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  text-align: center;
+  padding: 12px 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
+/* Content card styling */
+.content-card {
+  width: 100%;
+  max-width: 1200px;
+  padding: 24px;
+  background-color: var(--card-background);
+  color: var(--text-color);
+}

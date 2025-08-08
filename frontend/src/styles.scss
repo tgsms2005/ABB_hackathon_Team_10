@@ -1,0 +1,78 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+
+
+:root {
+  --background-color: #e7e7ec;
+  --text-color: #000;
+  --card-background-color: #fff;
+  --card-text-color: #000;
+  --primary-color: #3f51b5;
+  --secondary-text-color: #6c757d;
+  --primary-text-color: #333;
+  --divider-color: #e0e0e0;
+  --hover-background-color: #f0f4ff;
+  --secondary-card-background-color: #f7f7f7;
+  --error-color: #f44336;
+  --error-background-color: #fce4e4;
+  --border-color: #424242;
+  --card-border-color: #000000;
+  --upload-border-color: #757575;
+  --step-content-border-width: 1px;
+  --card-border-width: 2px;
+  --upload-border-width: 2px;
+  --metadata-item-border-width: 1px;
+  --error-border-width: 1px;
+}
+
+.dark-theme {
+  --background-color: #303030;
+  --text-color: #fff;
+  --card-background-color: #424242;
+  --card-text-color: #fff;
+  --primary-color: #bb86fc;
+  --secondary-text-color: #a0a0a0;
+  --primary-text-color: #e0e0e0;
+  --divider-color: #424242;
+  --hover-background-color: #2c2c2c;
+  --secondary-card-background-color: #2c2c2c;
+  --error-color: #cf6679;
+  --error-background-color: #3a1a1f;
+  --border-color: #e0e0e0;
+  --card-border-color: #ffffff;
+  --upload-border-color: #bdbdbd;
+  --step-content-border-width: 2px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+mat-card {
+  background-color: var(--card-background-color) !important;
+  color: var(--card-text-color) !important;
+}
+
+.mat-toolbar {
+  background: #3f51b5 !important;
+  color: #fff !important;
+}
+
+.mat-tab-label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}

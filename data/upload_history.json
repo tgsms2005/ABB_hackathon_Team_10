@@ -1,0 +1,92 @@
+[
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T02:35:37",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T02:36:08",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T02:51:46",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "train_numeric.csv",
+    "uploadDate": "2025-08-08T02:52:05",
+    "totalRecords": 100,
+    "totalColumns": 971,
+    "passRate": 0,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-09 03:00:00"
+  },
+  {
+    "username": "admin2",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T03:06:54",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T03:20:33",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T03:41:13",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T03:41:50",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T03:49:00",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  },
+  {
+    "username": "admin",
+    "fileName": "synthetic_dataset_10k.csv",
+    "uploadDate": "2025-08-08T03:56:15",
+    "totalRecords": 200,
+    "totalColumns": 5003,
+    "passRate": 0.5,
+    "dateRange": "2025-08-05 00:00:00 to 2025-08-13 07:00:00"
+  }
+]
